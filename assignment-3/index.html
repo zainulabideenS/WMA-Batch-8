@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <style>
+      p {
+        background-color:#a52a2a !important;
+        color: rgb(247, 245, 245);
+        width: 50%;
+      }
+    </style>
+  </head>
+  <body style="display: flex; flex-direction: column">
+    <div id="main">
+      <!-- h1, p, list, table, form, color, background change -->
+      <!--heading-->
+      <div>
+        <h3
+          style="
+            background-color: black;
+            color: white;
+            width: 150px;
+            text-align: center;
+          "
+        >
+          Headings
+        </h3>
+      </div>
+      <div
+        style="
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          text-align: center;
+          gap: 5px;
+        "
+      >
+        <h1
+          style="background-color: blue; color: antiquewhite !important"
+          id="heading-1"
+        >
+          Hello World!
+        </h1>
+        <h2>HEADING NO-2</h2>
+        <h3 id="head2">HEADING NO-4</h3>
+        <h3 class="classh">HEADING NO-5</h3>
+        <h3 class="classh">HEADNIG NO-6</h3>
+      </div>
+      <!--paragraph-->
+      <div>
+        <h3
+          style="
+            background-color: black;
+            color: white;
+            width: 150px;
+            text-align: center;
+          "
+        >
+          paragraph
+        </h3>
+      </div>
+      <p style="background-color: #a52a2a; ">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur a optio
+        ea vel sit, quaerat deserunt commodi placeat autem maxime dignissimos ad
+        ex amet nulla odit facere tempora! Placeat, beatae.
+      </p>
+      <!--lists-->
+      <div>
+        <h3
+          style="
+            background-color: black;
+            color: white;
+            width: 75px;
+            text-align: center;
+          "
+        >
+          List
+        </h3>
+      </div>
+      <div
+        style="background-color: rgb(37, 14, 37); color: rgb(255, 252, 247)"
+        id="list-style"
+      >
+        <ul>
+          <b><u>FRUITS</u></b>
+          <li>mango</li>
+          <li>apple</li>
+          <li>banana</li>
+        </ul>
+        <ol style="margin-right: 20px;">
+          <b><u>STUDENTS</u></b>
+          <li>Ahmad</li>
+          <li>Ali</li>
+          <li>Zain</li>
+        </ol>
+      </div>
+      <br />
+      <!--Table-->
+      <div>
+        <h3
+          style="
+            background-color: black;
+            color: white;
+            width: 75px;
+            text-align: center;
+          "
+        >
+          Table
+        </h3>
+      </div>
+      <div>
+        <table
+          border="1"
+          style="
+            text-align: center;
+            background-color: #a52a2a;
+            color: aliceblue;
+            width: 500px;
+            
+          "
+        >
+          <tr style="color: black ">
+            <th>ID</th>
+            <th>NAME</th>
+            <th>MARKS</th>
+            <th>GENDER</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>zain</td>
+            <td>20</td>
+            <td>male</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>ahmad</td>
+            <td>15</td>
+            <td>male</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>ali</td>
+            <td>15</td>
+            <td>male</td>
+          </tr>
+        </table>
+        <br />
+      </div>
+
+      <!--Form-->
+      <div id="myform">
+        <form id="formdata">
+          <h2>FORM</h2>
+          <label for="text">UserName : </label>
+          <input
+            type="text"
+            id="text"
+            placeholder="Enter your name"
+          /><br /><br />
+          <label for="num">Number: </label>
+          <input
+            type="number"
+            id="num"
+            placeholder="Enter your number"
+          /><br /><br />
+          <label for="email">Email : </label>
+          <input
+            type="email"
+            id="email"
+            placeholder="Enter your email"
+          /><br /><br />
+          <label for="color">select color : </label>
+          <input type="color" id="color" /><br /><br />
+          <label for="file">Attach your file : </label>
+          <input type="file" id="file" /><br /><br />
+          <label for="image">Attach your image : </label>
+          <input type="image" id="image" /><br /><br />
+          <h3>select your gender</h3>
+          <label for="R1">male</label>
+          <input type="radio" name="gender" id="R1" />
+          <label for="R2">female</label>
+          <input type="radio" name="gender" id="R2" /><br /><br />
+
+          <h3>Select your Language</h3>
+          <label for="urdu">Urdu</label>
+          <input type="checkbox" id="urdu" />
+          <label for="eng">English</label>
+          <input type="checkbox" id="eng" /><br /><br />
+          <textarea
+            name=""
+            id=""
+            placeholder="Enter the preview"
+            rows="7"
+          ></textarea
+          ><br /><br />
+          <input type="submit" />
+          <input type="reset" />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
