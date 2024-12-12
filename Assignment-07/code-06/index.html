@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temperature Conversion</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <!-- selection part of conversiontype -->
+    <form class="max-w-md mx-auto mt-5">
+      <label
+        for="Temperature"
+        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+        >Select an option for 'celcius to Fahrenheit' or 'Fahrenheit to celcius'</label
+      >
+      <select
+        id="conversiontype"
+        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+      >
+        <option selected disabled>Choose a conversiontype</option>
+        <option value="1">celcius to Fahrenheit</option>
+        <option value="2">Fahrenheit to celcius</option>
+      </select>
+<!-- input number part -->
+      <div>Enter any number:</div>
+      <input
+        type="number"
+        id="numberInput"
+        aria-describedby="helper-text-explanation"
+        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+        placeholder="Enter any number"
+        required
+      />
+      <button
+        type="button"
+        onclick=convertionTemprature()
+        class="mt-3 text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
+      >
+        Convert
+      </button>
+      <div class="text-gray-500">
+        Output
+      </div>
+      <div id="outputTemp"></div>
+    </form>
+  </body>
+</html>
